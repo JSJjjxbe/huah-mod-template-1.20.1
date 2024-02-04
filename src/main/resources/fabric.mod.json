@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "huah-mod",
+	"version": "${version}",
+	"name": "HUAH Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/huah-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.huah_mod.HUAHMod"
+		],
+		"fabric-datagen": [
+			"name.huah_mod.HUAHModDataGenerator"
+		]
+	},
+	"mixins": [
+		"huah-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
